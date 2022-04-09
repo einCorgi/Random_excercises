@@ -1,0 +1,32 @@
+print('''\nWelcome to the Automotive menu.
+            Please provide the required data as it follows:
+''')
+
+inp_manufacturer = input('Please provide manufacturer: ')
+inp_model = input('Please provide Model: ')
+inp_year = input('Please provide Year of release (number): ')
+inp_layout = input('Please provide custom Layout: ')
+inp_color = input('Please provide the Color of your preference: ')
+
+
+class Automotive:
+
+    def __init__(self, manufacturer, model, year, layout, color):
+        self.manufacturer = manufacturer
+        self.model = model
+        self.year = year
+        self.layout = layout
+        self.color = color
+
+    def show(self):
+        print(f"""
+        Manufacturer: {self.manufacturer:>4}
+        Model: {self.model:>13}
+        Year: {self.year:>14}
+        Layout: {self.layout:>12}
+        Color: {self.color:>13}
+        """)
+
+
+model_1 = Automotive(inp_manufacturer, inp_model, inp_year, inp_layout, inp_color)
+model_1.show()
