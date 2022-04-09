@@ -1,0 +1,12 @@
+number = []
+n_Squared = []
+
+for i in range(0, 6):
+    number.append(i)
+    sqr = i ** 2
+    n_Squared.append(sqr)
+
+print("Number\tSquared")
+
+for i in range(6):
+    print(f'{number[i]}\t\t{n_Squared[i]}')
