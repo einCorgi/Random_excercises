@@ -1,0 +1,28 @@
+print('''
+Bienvenid@ a su aplicacion Calculadora en Python
+''')
+
+class Calculadora:
+    def __init__(self, in_1, in_2):
+        self.in_1 = in_1
+        self.in_2 = in_2
+
+    def suma(self):
+        return self.in_1 + self.in_2
+
+    def resta(self):
+        return self.in_1 - self.in_2
+
+    def multiplicacion(self):
+        return self.in_1 * self.in_2
+
+    def division(self):
+        return self.in_1 / self.in_2
+
+
+resultado = Calculadora(3, 2)
+
+print(resultado.suma())
+print(resultado.resta())
+print(resultado.multiplicacion())
+print(resultado.division())
